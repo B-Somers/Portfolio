@@ -158,9 +158,9 @@ h2 {
 }
 
 
-/*---------------------*/
-/*--------Work --------*/
-/*---------------------*/
+/*-------------------*/
+/*---Work section----*/
+/*-------------------*/
 
 #work .content {
     display:flex;
@@ -230,9 +230,21 @@ h2 {
 }
 
 
+/*----------------------*/
+/*--------Footer--------*/
+/*----------------------*/
 
+footer .box-info .content {
+    height: 15vh;
+}
 
-
+footer .box-info .content a {
+    flex-grow: 1;
+    text-align: center;
+    color: #00060b;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+}
 
 
 
