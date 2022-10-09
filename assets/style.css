@@ -1,0 +1,87 @@
+/*------------------------------*/
+/*-----global declorations------*/
+/*------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid red; /* debugger*/
+}
+
+body {
+    min-height: 100%;
+    line-height: 1;
+    font-family: sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aqua;
+}
+
+ul {
+    list-style: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+
+
+
+
+
+/*------------------------------*/
+/*-----Header declorations------*/
+/*------------------------------*/
+
+
+nav {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+}
+h1{
+    flex-grow: 1;
+    padding: 0px;
+    margin: 0px;
+   
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    display: list-item;
+    text-align: end;
+}
+
+
+/*------------------------------*/
+/*-----Banner declorations------*/
+/*------------------------------*/
+
+
+.hero {
+    height: 10vw;
+    width: 100%;
+    background-image: url("./images/Portfolio\ banner.jpeg");
+    background-size: cover;
+    background-position: center;
+    position: relative;    
+}
+
+.hero h2 {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    padding: 1vw;
+}
+
+
+
+
