@@ -5,13 +5,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red; /* debugger*/
+   /* border: 1px solid red;  debugger*/
 }
 
 body {
     min-height: 100%;
     line-height: 1;
     font-family: sans-serif;
+    background-color: grey;
 }
 
 h1, h2, h3 {
@@ -53,11 +54,13 @@ h1{
 nav ul {
     display: flex;
     flex-direction: row;
+    
 }
 
 li {
     display: list-item;
     text-align: end;
+    margin-right: 10px;
 }
 
 
@@ -81,6 +84,161 @@ li {
     right: 0;
     padding: 1vw;
 }
+
+/*---------------------*/
+/*-----Info boxes------*/
+/*---------------------*/
+
+
+.box-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-top: 15px;
+}
+.box-info .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    flex-grow: 1;
+    border-left: double 8px rgb(108, 107, 109);
+}
+
+.box-info > header {
+    
+    width: 15vw;
+    min-width: 15vw;
+}
+
+.box-info figure
+{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 3vw;
+    margin-inline-end: 3vw;
+}
+
+
+h2 {
+    text-align: right;
+    margin-right: 20px;
+    font-size: xx-large;
+}
+
+/*---------------------*/
+/*-------About me------*/
+/*---------------------*/
+
+
+#about-me .content img {
+    width: 14vw;
+    border: 0.5vw solid black;
+    border-radius: 40%;
+    margin-left: 3vw;
+}
+
+
+
+#about-me .content div {
+    flex-grow: 1;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    justify-items: center;
+}
+#about-me .content div p {
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    text-align: center;
+}
+
+
+/*---------------------*/
+/*--------Work --------*/
+/*---------------------*/
+
+#work .content {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+
+#work figure {
+    position: relative;
+}
+
+#work figure figcaption {
+    position: absolute;
+    bottom: 10%;
+    border: 0.5vw solid rgb(7, 47, 63);
+    padding: 2vw;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+#work figure figcaption p {
+    font-size: smaller;
+    color:#ffecc8;
+}
+
+
+
+.content .first-project {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+
+.content .first-project figure, 
+.content .other-projects figure  {
+    flex-grow: 1;
+    display: flex;
+}
+
+
+
+.content .first-project a,
+.content .other-projects a {
+    flex-grow: 1;
+    display: flex;
+    color: aliceblue;
+    text-shadow: 2px 2px 2px rgb(8, 5, 6);
+    width: 50%;
+}
+
+.content .first-project figure img,
+.content .other-projects figure img {
+    flex-grow: 1;
+    border: 0.5vw solid rgb(7, 47, 63);
+    max-width: 100%;
+}
+
+
+.content .other-projects {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
