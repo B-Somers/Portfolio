@@ -12,12 +12,12 @@ body {
     min-height: 100%;
     line-height: 1;
     font-family: sans-serif;
-    background-color: grey;
+    background-color: rgb(41, 42, 42);
 }
 
 h1, h2, h3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: aqua;
+    color: rgb(185, 102, 0);
 }
 
 ul {
@@ -27,6 +27,7 @@ ul {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
+    
 }
 
 
@@ -54,6 +55,7 @@ h1{
 nav ul {
     display: flex;
     flex-direction: row;
+   
     
 }
 
@@ -61,6 +63,8 @@ li {
     display: list-item;
     text-align: end;
     margin-right: 10px;
+    
+
 }
 
 
@@ -103,7 +107,7 @@ li {
     justify-content: start;
     align-items: center;
     flex-grow: 1;
-    border-left: double 8px rgb(108, 107, 109);
+    border-left: double 8px rgb(88, 38, 35);
 }
 
 .box-info > header {
@@ -155,6 +159,7 @@ h2 {
     padding-top: 0.5vw;
     padding-bottom: 0.5vw;
     text-align: center;
+    color: darkgoldenrod;
 }
 
 
@@ -177,15 +182,17 @@ h2 {
 #work figure figcaption {
     position: absolute;
     bottom: 10%;
-    border: 0.5vw solid rgb(7, 47, 63);
+    border: 0.5vw solid rgb(169, 76, 5);
     padding: 2vw;
     font-weight: bold;
     font-size: 2vw;
+    background-color: rgb(0, 0, 0);
 }
 
 #work figure figcaption p {
     font-size: smaller;
     color:#ffecc8;
+    
 }
 
 
@@ -210,14 +217,14 @@ h2 {
     flex-grow: 1;
     display: flex;
     color: aliceblue;
-    text-shadow: 2px 2px 2px rgb(8, 5, 6);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
     width: 50%;
 }
 
 .content .first-project figure img,
 .content .other-projects figure img {
     flex-grow: 1;
-    border: 0.5vw solid rgb(7, 47, 63);
+    border: 0.5vw solid rgb(208, 135, 18);
     max-width: 100%;
 }
 
@@ -241,7 +248,7 @@ footer .box-info .content {
 footer .box-info .content a {
     flex-grow: 1;
     text-align: center;
-    color: #00060b;
+    color: rgb(234, 9, 151);
     padding-top: 0.5vw;
     padding-bottom: 0.5vw;
 }
@@ -252,6 +259,65 @@ footer .box-info .content a {
 
 
 
+/*----------------------*/
+/*--Resopnsive design---*/
+/*----------------------*/
 
 
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 4vw;
+    }
+}
 
+@media screen and (max-width: 768px) {
+    nav a {
+        font-size: x-small;
+    }
+
+    h1 {
+        font-size: 4vw;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+}
+/*---------------------------------------------*/
+/* Style responsive design for diverse screens */
+/*---------------------------------------------*/
+
+@media screen and (max-width: 576px) {
+    nav ul {
+        display:flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 8vw;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+
+    p {
+        font-size: 3vw;
+    }
+
+    nav a {
+        font-size: 2vw;
+    }
+
+    footer a.fa {
+        font-size: 3vw;
+    }
+
+    footer .box-info .content {
+        flex-wrap: wrap;
+    }
+
+    footer .box-info .content a {
+        width: 50%;
+    }
+}
